@@ -1,11 +1,11 @@
 <html>
 <head>
-<title>Page Title</title>
-<meta name="viewport" content="width=device-with, initial-scale=1">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0-beta.1/jquery.mobile-1.3.0-beta.1.min.css"/>
-<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.3.0-beta.1/jquery.mobile-1.3.0-beta.1.min.js"></script>
-<style>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-with, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0-beta.1/jquery.mobile-1.3.0-beta.1.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.0-beta.1/jquery.mobile-1.3.0-beta.1.min.js"></script>
+	<style>
 #google_map,#google_map2,#google_map3{
   position: absolute;
 	top: 0;
@@ -18,12 +18,14 @@
 
 </head>
 <body>
-<div data-role="page" id="main">
-	<div data-role="content">
-		
+	
+
+	<div data-role="page" id="main">
+		<div data-role="content">
 			<div id="map">
 				<iframe id="google_map" width="288" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.cl?output=embed"></iframe>
 			</div>
+			
 			<script>
 				var c = function(pos){
 					var lat = pos.coords.latitude,
@@ -39,33 +41,48 @@
 				}
 			</script>
 
-	</div>
-	<div data-role="panel" id="mypanel" data-theme="a" data-display="overlay">
-		<ul data-role="listview" data-theme="a">
-			<li><a href="#santiago">Santiago Centro</a></li>
-			<li><a href="#providencia">Providencia</a></li>
-			<li><a href="#">Las Condes</a></li>
-		</ul>
-	</div>
-	<div data-role="panel" id="mypanel2" data-theme="b" data-position="right" data-display="overlay">
-		<label for="search-basic">Search Input:</label>
-		<input type="search" name="search" id="search-basic" value="" />
-	</div>
+		</div>
+		
+		<div data-role="panel" id="mypanel" data-theme="a" data-display="overlay">
+			<ul data-role="listview" data-theme="a">
+				<li>
+					<a href="#santiago">Santiago Centro</a>
+				</li>
+				<li>
+					<a href="#providencia">Providencia</a>
+				</li>
+				<li>
+					<a href="#">Las Condes</a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="panel" id="mypanel2" data-theme="b" data-position="right" data-display="overlay">
+			<label for="search-basic">Search Input:</label>
+			<input type="search" name="search" id="search-basic" value="" />
+		</div>
 
-	<div data-role="footer" data-position="fixed">		
-  <nav data-role="navbar" data-iconpos="top">
-    <ul>
-      <li><a href="#mypanel" data-theme="a" data-icon="Home">Home</a></li>
-      <li><a href="#" id="get_location" data-theme="e" data-icon="refresh">Refresh</a></li>
-      <li><a href="#mypanel2" data-theme="b" data-icon="search">Search</a></li>
-    </ul>
-  </nav><!-- /navbar -->
-</div><!-- /footer -->
-</div>
-<!-- ############################## pagina 2 ##################################### -->
-<div data-role="page" id="santiago">
-	<div data-role="content">
-		<div id="map">
+		<div data-role="footer" data-position="fixed">
+			<nav data-role="navbar" data-iconpos="top">
+				<ul>
+					<li>
+						<a href="#mypanel" data-theme="a" data-icon="Home">Home</a>
+					</li>
+					<li>
+						<a href="#" id="get_location" data-theme="e" data-icon="refresh">Refresh</a>
+					</li>
+					<li>
+						<a href="#mypanel2" data-theme="b" data-icon="search">Search</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- /navbar -->
+		</div>
+		<!-- /footer -->
+	</div>
+	<!-- ############################## pagina 2 ##################################### -->
+	<div data-role="page" id="santiago">
+		<div data-role="content">
+			<div id="map">
 				<iframe id="google_map2" width="288" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.cl/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=santiago&amp;aq=&amp;sll=-33.434092,-70.614452&amp;sspn=0.032017,0.049782&amp;ie=UTF8&amp;hq=&amp;hnear=Santiago+-+Regi%C3%B3n+Metropolitana&amp;t=m&amp;ll=-33.46911,-70.642004&amp;spn=0.025059,0.024719&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
 			</div>
 			<script>
@@ -82,35 +99,48 @@
 					return false;
 				}
 			</script>
-	</div>
+		</div>
 
-	<div data-role="panel" id="mypanel" data-theme="a" data-display="overlay">
-		<ul data-role="listview" data-theme="a">
-			<li><a href="#santiago">Santiago Centro</a></li>
-			<li><a href="#providencia">Providencia</a></li>
-			<li><a href="#">Las Condes</a></li>
-		</ul>
-	</div>
-	<div data-role="panel" id="mypanel2" data-theme="b" data-position="right" data-display="overlay">
-		<label for="search-basic">Search Input:</label>
-		<input type="search" name="search" id="search-basic" value="" />
-	</div>
+		<div data-role="panel" id="mypanel" data-theme="a" data-display="overlay">
+			<ul data-role="listview" data-theme="a">
+				<li>
+					<a href="#santiago">Santiago Centro</a>
+				</li>
+				<li>
+					<a href="#providencia">Providencia</a>
+				</li>
+				<li>
+					<a href="#">Las Condes</a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="panel" id="mypanel2" data-theme="b" data-position="right" data-display="overlay">
+			<label for="search-basic">Search Input:</label>
+			<input type="search" name="search" id="search-basic" value="" />
+		</div>
 
-	<div data-role="footer" data-position="fixed">		
-  <nav data-role="navbar" data-iconpos="top">
-    <ul>
-      <li><a href="#mypanel" data-theme="a" data-icon="Home">Home</a></li>
-      <li><a href="#" id="get_location2" data-theme="e" data-icon="refresh">Refresh</a></li>
-      <li><a href="#mypanel2" data-theme="b" data-icon="search">Search</a></li>
-    </ul>
-  </nav><!-- /navbar -->
-</div>
-</div>
-			<!-- ############################## pagina 3 ##################################### -->
+		<div data-role="footer" data-position="fixed">
+			<nav data-role="navbar" data-iconpos="top">
+				<ul>
+					<li>
+						<a href="#mypanel" data-theme="a" data-icon="Home">Home</a>
+					</li>
+					<li>
+						<a href="#" id="get_location2" data-theme="e" data-icon="refresh">Refresh</a>
+					</li>
+					<li>
+						<a href="#mypanel2" data-theme="b" data-icon="search">Search</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- /navbar -->
+		</div>
+	</div>
+	<!-- ############################## pagina 3 ##################################### -->
 
-<div data-role="page" id="providencia">
-	<div data-role="content">
-		<div id="map">
+	<div data-role="page" id="providencia">
+		<div data-role="content">
+			<div id="map">
 				<iframe id="google_map3" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.cl/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=Providencia&amp;aq=&amp;sll=-33.434879,-70.61574&amp;sspn=0.016009,0.024891&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=Providencia,+Santiago,+Regi%C3%B3n+Metropolitana&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
 			</div>
 			<script>
@@ -127,31 +157,43 @@
 					return false;
 				}
 			</script>
-	</div>
+		</div>
 
-	<div data-role="panel" id="mypanel" data-theme="a" data-display="overlay">
-		<ul data-role="listview" data-theme="a">
-			<li><a href="#santiago">Santiago Centro</a></li>
-			<li><a href="#providencia">Providencia</a></li>
-			<li><a href="#">Las Condes</a></li>
-		</ul>
-	</div>
-	<div data-role="panel" id="mypanel2" data-theme="b" data-position="right" data-display="overlay">
-		<label for="search-basic">Search Input:</label>
-		<input type="search" name="search" id="search-basic" value="" />
-	</div>
+		<div data-role="panel" id="mypanel" data-theme="a" data-display="overlay">
+			<ul data-role="listview" data-theme="a">
+				<li>
+					<a href="#santiago">Santiago Centro</a>
+				</li>
+				<li>
+					<a href="#providencia">Providencia</a>
+				</li>
+				<li>
+					<a href="#">Las Condes</a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="panel" id="mypanel2" data-theme="b" data-position="right" data-display="overlay">
+			<label for="search-basic">Search Input:</label>
+			<input type="search" name="search" id="search-basic" value="" />
+		</div>
 
-	<div data-role="footer" data-position="fixed">		
-  <nav data-role="navbar" data-iconpos="top">
-    <ul>
-      <li><a href="#mypanel" data-theme="a" data-icon="Home">Home</a></li>
-      <li><a href="#" id="get_location3" data-theme="e" data-icon="refresh">Refresh</a></li>
-      <li><a href="#mypanel2" data-theme="b" data-icon="search">Search</a></li>
-    </ul>
-  </nav><!-- /navbar -->
-</div>
-</div>
-
+		<div data-role="footer" data-position="fixed">
+			<nav data-role="navbar" data-iconpos="top">
+				<ul>
+					<li>
+						<a href="#mypanel" data-theme="a" data-icon="Home">Home</a>
+					</li>
+					<li>
+						<a href="#" id="get_location3" data-theme="e" data-icon="refresh">Refresh</a>
+					</li>
+					<li>
+						<a href="#mypanel2" data-theme="b" data-icon="search">Search</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- /navbar -->
+		</div>
+	</div>
 
 </body>
 </html>
